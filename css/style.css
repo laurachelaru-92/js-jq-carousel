@@ -9,6 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* Titolo */
 h1 {
   margin: 30px auto;
   border-radius: 5px;
@@ -19,6 +20,7 @@ h1 {
   font-size: 50px;
 }
 
+/* Contenitore del carousel*/
 .wrapper {
   width: 80%;
   height: 70vh;
@@ -27,17 +29,7 @@ h1 {
   position: relative;
 }
 
-.carousel {
-  margin: 0 5%;
-  border: 2px solid #000;
-  font-size: 0;
-  width: 50%;
-  height: 100%;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-}
-
+/* Elementi prima e dopo con frecce */
 .previous,
 .next {
   display: inline-block;
@@ -50,10 +42,23 @@ h1 {
   cursor: pointer;
 }
 
+/*Carousel di immagini*/
+.carousel {
+  margin: 0 5%;
+  font-size: 0;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* Immagini del carousel (generiche) */
 .carousel img {
   display: none;
 }
 
+/* Immagine del carousel attiva */
 img.active {
   display: inline-block;
   width: 100%;
@@ -65,6 +70,7 @@ img.active {
   transform: translate(-50%, -50%);
 }
 
+/* Bullet points al fondo del carousel di immagini */
 .bullets {
   position: absolute;
   bottom: 5px;
@@ -77,11 +83,13 @@ img.active {
   line-height: 50px;
 }
 
+/* Bullet points (generici) */
 .bullets i {
   padding: 3px;
   color: #fff;
 }
 
+/* Bullet point attivo */
 .bullets i.active {
   color: #000;
   transform: scale(1.5);
