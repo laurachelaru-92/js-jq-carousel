@@ -5,19 +5,26 @@ padding: 0;
 }
 
 body {
-  background-color: red;
+  background-image: url(../img/bg.png);
   font-family: "Roboto", sans-serif;
 }
 
 h1 {
+  margin: 30px auto;
+  border-radius: 5px;
+  width: 70%;
   text-align: center;
-  margin: 30px 0;
+  background-color: rgba(0, 0, 255, 0.8);
+  font-weight: 900;
+  font-size: 50px;
 }
 
 .wrapper {
   width: 80%;
+  height: 70vh;
   margin: 30px auto;
   text-align: center;
+  position: relative;
 }
 
 .carousel {
@@ -25,8 +32,10 @@ h1 {
   border: 2px solid #000;
   font-size: 0;
   width: 50%;
+  height: 100%;
   display: inline-block;
   vertical-align: middle;
+  position: relative;
 }
 
 .previous,
@@ -42,11 +51,38 @@ h1 {
 }
 
 .carousel img {
-  width: 100%;
-  height: auto;
   display: none;
 }
 
 img.active {
   display: inline-block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bullets {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 50px;
+  background-color: blue;
+  border-radius: 5px;
+  line-height: 50px;
+}
+
+.bullets i {
+  padding: 3px;
+  color: #fff;
+}
+
+.bullets i.active {
+  color: #000;
+  transform: scale(1.5);
 }

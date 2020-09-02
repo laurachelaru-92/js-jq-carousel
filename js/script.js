@@ -13,6 +13,15 @@ $(document).ready(function(){
         activeImg.next().addClass("active");
       }
     }
+    // function() {
+    //   var activeBullet = $(".fa-circle.active");
+    //   activeBullet.removeClass("active");
+    //   if (activeBullet.hasClass("last")) {
+    //     $(".fa-circle.first").addClass("active");
+    //   } else {
+    //     activeBullet.next().addClass("active");
+    //   }
+    // }
   );
 
   clickPrevious.click(
