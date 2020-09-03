@@ -87,6 +87,7 @@ img.active {
 .bullets i {
   padding: 3px;
   color: #fff;
+  cursor: pointer;
 }
 
 /* Bullet point attivo */

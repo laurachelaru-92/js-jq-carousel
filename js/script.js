@@ -59,4 +59,19 @@ function goPrevious() {
   }
 }
 
+// Creiamo l'evento che fa apparire l'immagine corrispondente al bullet point cliccato
+$(".bullets .fa-circle").click(
+  function() {
+    // Rimuoviamo la classe "active" dal bullet attivo e dall'immagine attiva
+    $(".fa-circle.active, img.active").removeClass("active");
+    // La aggiungiamo al bullet cliccato
+    $(this).addClass("active");
+    // Selezioniamo l'indice del bullet cliccato
+    var activeIndexBullet = $(this).index();
+    // Diamo la classe "active" all'immagine "figlia" corrispondente all'indice+1
+    var activeIndexImg = activeIndexBullet + 1;
+    $("img:nth-child("+activeIndexImg+")").addClass("active");
+  }
+);
+
 });
